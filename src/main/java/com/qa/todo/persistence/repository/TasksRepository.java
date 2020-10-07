@@ -1,5 +1,12 @@
 package com.qa.todo.persistence.repository;
 
-public class TasksRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
+import com.qa.todo.persistence.domain.Tasks;
+
+@Repository
+public interface TasksRepository extends JpaRepository<Tasks, Long>
+{
+	
 }
