@@ -2,6 +2,7 @@ package com.qa.todo.rest;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -25,6 +26,7 @@ public class TasksController
 {
 	private TasksService service;
 
+	@Autowired
 	public TasksController(TasksService service) 
 	{
 		super();
@@ -40,7 +42,7 @@ public class TasksController
     }
     
     // Read All
-    @GetMapping("/read")
+    @GetMapping("/readAll")
     public ResponseEntity<List<TasksDTO>> readAll()
     {
     	List<TasksDTO> readAll = this.service.readAll();
