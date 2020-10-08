@@ -56,16 +56,29 @@ public class TasksService
     }
     
     // Read
-    public TasksDTO read(Long id) {
-        Tasks found = this.repository.findById(id).orElseThrow(TasksNotFoundException::new);
+    public TasksDTO read(Long id) 
+    {
+        Tasks found = this.repository.findById(id)
+        		.orElseThrow(TasksNotFoundException::new);
         return this.mapToDTO(found);
     }
     
     // Update
-    // Using .getOne() for lazy loading instead of .findById()
-    public TasksDTO update(TasksDTO tasksDTO, Long id) {
-        Tasks toUpdate = this.repository.findById(id).orElseThrow(TasksNotFoundException::new);
+    public TasksDTO update(TasksDTO tasksDTO, Long id) 
+    {
+        Tasks toUpdate = this.repository.findById(id)
+        		.orElseThrow(TasksNotFoundException::new);
         ToDoProjectBeanUtils.mergeNotNull(tasksDTO, toUpdate);
         return this.mapToDTO(this.repository.save(toUpdate));
+    }
+    
+    // Delete
+    // Final
+    public final boolean delete(Long id) {
+        if (!this.repository.existsById(id)) {
+            throw new TasksNotFoundException();
+        }
+        this.repository.deleteById(id);
+        return !this.repository.existsById(id);
     }
 }
