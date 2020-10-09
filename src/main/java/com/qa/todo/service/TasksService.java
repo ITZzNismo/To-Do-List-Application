@@ -5,6 +5,7 @@ import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.qa.todo.dto.TasksDTO;
 import com.qa.todo.exception.TasksNotFoundException;
@@ -12,7 +13,7 @@ import com.qa.todo.persistence.domain.Tasks;
 import com.qa.todo.persistence.repository.TasksRepository;
 import com.qa.todo.utils.ToDoProjectBeanUtils;
 
-
+@Service
 public class TasksService 
 {
     private TasksRepository repository;

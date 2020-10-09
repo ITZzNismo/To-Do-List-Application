@@ -33,5 +33,12 @@ public class ToDo
 	private String name;
 	
 	@OneToMany(mappedBy = "Tasks", cascade = CascadeType.ALL)
-	private List<Tasks> tasks = new ArrayList<>();	
+	private List<Tasks> tasks = new ArrayList<>();
+
+	public ToDo(@NotNull String name) {
+		super();
+		this.name = name;
+	}	
+	
+	
 }
