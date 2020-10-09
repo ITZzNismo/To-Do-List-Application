@@ -13,9 +13,8 @@ These instructions will get you a copy of the project up and running on your loc
 1. Download/clone the To-Do-List-Application repository to your local machine.
 2. Open up your chosen IDE.
 3. Import the project from your files.
-4. Open the Runner class and press run.
-5. Follow the instructions in the console.
-6. Open and edit other classes for testing and development purposes.
+4. Open the ToDoProjectApplication class and press run.
+5. Open and edit other classes for testing and development purposes.
 
 ### Prerequisites
 
