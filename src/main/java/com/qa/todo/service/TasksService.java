@@ -74,8 +74,7 @@ public class TasksService
     }
     
     // Delete
-    // Final
-    public final boolean delete(Long id) {
+    public boolean delete(Long id) {
         if (!this.repository.existsById(id)) {
             throw new TasksNotFoundException();
         }
