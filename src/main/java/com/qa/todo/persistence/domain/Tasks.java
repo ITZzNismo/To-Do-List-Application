@@ -1,7 +1,5 @@
 package com.qa.todo.persistence.domain;
 
-import java.util.Date;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,7 +8,6 @@ import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import jdk.jfr.BooleanFlag;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -38,7 +35,7 @@ public class Tasks
 	@ManyToOne
 	private ToDo todo;
 
-	public Tasks (@NotNull @Size(min = 0, max = 40) String task, Boolean completed) 
+	public Tasks (String task, Boolean completed) 
 	{
 		super();
 		this.task = task;

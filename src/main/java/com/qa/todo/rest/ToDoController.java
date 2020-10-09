@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.qa.todo.dto.TasksDTO;
 import com.qa.todo.dto.ToDoDTO;
 import com.qa.todo.persistence.domain.ToDo;
 import com.qa.todo.service.ToDoService;
