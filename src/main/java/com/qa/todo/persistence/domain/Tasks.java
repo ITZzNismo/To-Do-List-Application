@@ -35,17 +35,13 @@ public class Tasks
 	
 	private Boolean completed;
 	
-	private Date Deadline;
-	
 	@ManyToOne
 	private ToDo todo;
 
-	public Tasks(Long id, @NotNull @Size(min = 0, max = 40) String task, Boolean completed, Date deadline) 
+	public Tasks (@NotNull @Size(min = 0, max = 40) String task, Boolean completed) 
 	{
 		super();
-		this.id = id;
 		this.task = task;
 		this.completed = completed;
-		Deadline = deadline;
 	}
 }
