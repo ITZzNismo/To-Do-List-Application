@@ -12,10 +12,10 @@
 	<artifactId>ToDoProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ToDoProject</name>
-	<description>Demo project for Spring Boot</description>
+	<description>To Do List Application</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>14</java.version>
 	</properties>
 
 	<dependencies>

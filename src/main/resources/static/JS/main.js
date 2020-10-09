@@ -1,4 +1,4 @@
-fetch("http://localhost:7890/Tasks/readAll")
+fetch("http://localhost:7890/tasks/readAll")
     .then
     (
         function(response)

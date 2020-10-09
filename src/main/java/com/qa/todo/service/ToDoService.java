@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
 
 import com.qa.todo.dto.ToDoDTO;
 import com.qa.todo.exception.ToDoNotFoundException;
@@ -11,6 +12,7 @@ import com.qa.todo.persistence.domain.ToDo;
 import com.qa.todo.persistence.repository.ToDoRepository;
 import com.qa.todo.utils.ToDoProjectBeanUtils;
 
+@Service
 public class ToDoService 
 {
     private ToDoRepository repository;
