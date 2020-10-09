@@ -54,7 +54,7 @@ We use [SemVer](http://semver.org/) for versioning.
 
 ## Authors
 
-* **Simon Powelll** - *Further development* - [Simon Powell] (https://github.com/spowell24)
+* **Simon Powell** - *Further development* - [Simon Powell] (https://github.com/spowell24)
 
 ## License
 
